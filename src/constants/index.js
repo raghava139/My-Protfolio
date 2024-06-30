@@ -30,7 +30,8 @@ import {
     postgresql,
     bolx,
     sbbs,
-    MAI
+    MAI,
+    whatsapp
 } from "../assets/icons";
 
 export const skills = [
@@ -193,20 +194,25 @@ export const experiences = [
 ];
 
 export const socialLinks = [
-    {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
-    },
+    // {
+    //     name: 'Contact',
+    //     iconUrl: contact,
+    //     link: '/contact',
+    // },
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/raghava139',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/raghavendra-yallamanda-970794225/',
+    },
+    {
+        name: 'Whatsapp',
+        iconUrl: whatsapp,
+        link: 'https://wa.me/9676324174',
     }
 ];
 

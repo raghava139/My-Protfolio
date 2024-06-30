@@ -5,6 +5,7 @@ import Loader from "../Components/Loader";
 import { Canvas } from "@react-three/fiber";
 import useAlert from "../hooks/useAlert";
 import Alert from "../Components/Alert.jsx";
+import { socialLinks } from "../constants";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -70,6 +71,29 @@ const Contact = () => {
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Get in Touch</h1>
+        <div className="flex">
+          {socialLinks.map((link, index) => (
+            <div
+              key={index}
+              className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md mr-2"
+            >
+              <a
+                href={link.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center"
+                style={{ width: "100%", height: "100%" }}
+              >
+                <img
+                  src={link.iconUrl}
+                  alt={link.name}
+                  style={{ width: "30px", height: "30px" }}
+                />
+              </a>
+            </div>
+          ))}
+        </div>
+
         <form
           className="w-full flex flex-col gap-7 mt-14"
           onSubmit={handleSubmit}

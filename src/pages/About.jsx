@@ -3,40 +3,49 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
-import  CTA  from "../Components/CTA";
+import CTA from "../Components/CTA";
 import { experiences, skills } from "../constants";
+import resumePDF from "../assets/Pdfs/RaghavendraY -FDE.pdf";
 
 import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
   return (
-    <section className='max-container'>
-      <h1 className='head-text'>
+    <section className="max-container">
+      <h1 className="head-text">
         Hello, I'm{" "}
-        <span className='blue-gradient_text font-semibold drop-shadow'>
+        <span className="blue-gradient_text font-semibold drop-shadow">
           {" "}
           Raghavendra.Y
         </span>{" "}
         👋
       </h1>
 
-      <div className='mt-5 flex flex-col gap-3 text-slate-500 text-justify'>
+      <div className="mt-5 flex flex-col gap-3 text-slate-500 text-justify">
         <p>
-        I am a Frontend Developer with 3 years of experience, specializing in React.js with 2.7 years of expertise. I have hands-on experience in creating dynamic user interfaces and excel in problem-solving, consistently delivering efficient and high-quality solutions.        </p>
+          I am a Frontend Developer with 3 years of experience, specializing in
+          React.js with 2.7 years of expertise. I have hands-on experience in
+          creating dynamic user interfaces and excel in problem-solving,
+          consistently delivering efficient and high-quality solutions.
+          <a href={resumePDF} download className="btn btn-sm" style={{ padding: '6px 12px', fontSize: '12px' }}>
+        Resume
+      </a>
+        </p>
+        
       </div>
 
-      <div className='py-10 flex flex-col'>
-        <h3 className='subhead-text'>My Skills</h3>
+      <div className="py-10 flex flex-col">
+        <h3 className="subhead-text">My Skills</h3>
 
-        <div className='mt-16 flex flex-wrap gap-12'>
+        <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill) => (
-            <div className='block-container w-20 h-20' key={skill.name}>
-              <div className='btn-back rounded-xl' />
-              <div className='btn-front rounded-xl flex justify-center items-center'>
+            <div className="block-container w-20 h-20" key={skill.name}>
+              <div className="btn-back rounded-xl" />
+              <div className="btn-front rounded-xl flex justify-center items-center">
                 <img
                   src={skill.imageUrl}
                   alt={skill.name}
-                  className='w-1/2 h-1/2 object-contain'
+                  className="w-1/2 h-1/2 object-contain"
                 />
               </div>
             </div>
@@ -44,16 +53,16 @@ const About = () => {
         </div>
       </div>
 
-      <div className='pt-4 pb-0'>
-        <h3 className='subhead-text'>Work Experience.</h3>
-        <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+      <div className="pt-4 pb-0">
+        <h3 className="subhead-text">Work Experience.</h3>
+        <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
             I've worked with all sorts of companies, leveling up my skills and
             teaming up with smart people. Here's the rundown:
           </p>
         </div>
 
-        <div className='mt-12 flex'>
+        <div className="mt-12 flex">
           <VerticalTimeline>
             {experiences.map((experience, index) => (
               <VerticalTimelineElement
@@ -61,11 +70,11 @@ const About = () => {
                 date={experience.date}
                 iconStyle={{ background: experience.iconBg }}
                 icon={
-                  <div className='flex justify-center items-center w-full h-full'>
+                  <div className="flex justify-center items-center w-full h-full">
                     <img
                       src={experience.icon}
                       alt={experience.company_name}
-                      className='w-[60%] h-[60%] object-contain'
+                      className="w-[60%] h-[60%] object-contain"
                     />
                   </div>
                 }
@@ -77,22 +86,22 @@ const About = () => {
                 }}
               >
                 <div>
-                  <h3 className='text-black text-xl font-poppins font-semibold'>
+                  <h3 className="text-black text-xl font-poppins font-semibold">
                     {experience.title}
                   </h3>
                   <p
-                    className='text-black-500 font-medium text-base'
+                    className="text-black-500 font-medium text-base"
                     style={{ margin: 0 }}
                   >
                     {experience.company_name}
                   </p>
                 </div>
 
-                <ul className='my-5 list-disc ml-5 space-y-2'>
+                <ul className="my-5 list-disc ml-5 space-y-2">
                   {experience.points.map((point, index) => (
                     <li
                       key={`experience-point-${index}`}
-                      className='text-black-500/50 font-normal pl-1 text-sm'
+                      className="text-black-500/50 font-normal pl-1 text-sm"
                     >
                       {point}
                     </li>
@@ -104,7 +113,7 @@ const About = () => {
         </div>
       </div>
 
-      <hr className='border-slate-200' />
+      <hr className="border-slate-200" />
 
       <CTA />
     </section>

@@ -33,6 +33,7 @@ import postgresql from './postgresql.svg'
 import  bolx from './bolx.svg'
 import sbbs from './sbbs.svg'
 import MAI from './MAI.svg'
+import whatsapp from './whatsapp.svg'
 
 export {
     css,
@@ -70,5 +71,6 @@ export {
     bolx,
     sbbs,
     MAI,
+    whatsapp
     
 }
