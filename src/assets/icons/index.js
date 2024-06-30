@@ -30,6 +30,9 @@ import soundoff from './soundoff.png'
 import bootstrap from './bootstrap.svg'
 import antd from './antd.svg'
 import postgresql from './postgresql.svg'
+import  bolx from './bolx.svg'
+import sbbs from './sbbs.svg'
+import MAI from './MAI.svg'
 
 export {
     css,
@@ -64,5 +67,8 @@ export {
     bootstrap,
     antd,
     postgresql,
+    bolx,
+    sbbs,
+    MAI,
     
 }

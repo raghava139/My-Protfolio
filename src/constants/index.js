@@ -27,7 +27,10 @@ import {
     jquery,
     bootstrap,
     antd,
-    postgresql
+    postgresql,
+    bolx,
+    sbbs,
+    MAI
 } from "../assets/icons";
 
 export const skills = [
@@ -209,45 +212,52 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: bolx,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
+        name: 'BOLX - WMS',
+        description: 'BOLX is a sophisticated Warehouse Management System designed to streamline warehouse operations, optimize inventory management, and improve overall efficiency. This project harnesses the power of modern web technologies to deliver a robust and user-friendly interface for managing complex warehousing tasks.',
         link: 'https://github.com/adrianhajdin/pricewise',
     },
+    // {
+    //     iconUrl: pricewise,
+    //     theme: 'btn-back-red',
+    //     name: 'Amazon Price Tracker',
+    //     description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
+    //     link: 'https://github.com/adrianhajdin/pricewise',
+    // },
     {
-        iconUrl: threads,
+        iconUrl: MAI,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
+        name: 'MAI - WMS',
+        description: 'MAI is another advanced Warehouse Management System focused on enhancing logistics and supply chain operations. It offers a suite of tools to manage inventory, process orders, and track shipments efficiently. The system is built to cater to both small-scale and large-scale warehouse environments.',
         link: 'https://github.com/adrianhajdin/threads',
     },
     {
-        iconUrl: car,
+        iconUrl: sbbs,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
+        name: 'SBBS - Printer Rental Services',
+        description: 'SBBS is a dynamic web application designed for managing printer rental services. It provides a platform for customers to browse, rent, and manage printers. The application supports a variety of rental plans and integrates seamlessly with payment gateways for smooth transactions.',
         link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
     },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+    // {
+    //     iconUrl: snapgram,
+    //     theme: 'btn-back-pink',
+    //     name: 'Full Stack Instagram Clone',
+    //     description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
+    //     link: 'https://github.com/adrianhajdin/social_media_app',
+    // },
+    // {
+    //     iconUrl: estate,
+    //     theme: 'btn-back-black',
+    //     name: 'Real-Estate Application',
+    //     description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
+    //     link: 'https://github.com/adrianhajdin/projects_realestate',
+    // },
+    // {
+    //     iconUrl: summiz,
+    //     theme: 'btn-back-yellow',
+    //     name: 'AI Summarizer Application',
+    //     description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
+    //     link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+    // }
 ];

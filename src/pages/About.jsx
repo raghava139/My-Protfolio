@@ -20,7 +20,7 @@ const About = () => {
         👋
       </h1>
 
-      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+      <div className='mt-5 flex flex-col gap-3 text-slate-500 text-justify'>
         <p>
         I am a Frontend Developer with 3 years of experience, specializing in React.js with 2.7 years of expertise. I have hands-on experience in creating dynamic user interfaces and excel in problem-solving, consistently delivering efficient and high-quality solutions.        </p>
       </div>
